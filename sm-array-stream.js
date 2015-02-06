@@ -34,14 +34,23 @@ ArrayStream.prototype._write = function(chunk, encoding, cb) {
 };
 
 ArrayStream.prototype.performWrite = function(chunk, encoding, cb) {
-    if (Array.isArray(chunk)) {
+    var hasData = false;
+    if (encoding === 'item') {
+        hasData = true;
+        if (this._buffer) {
+            this._buffer.push(chunk);
+        } else {
+            this._buffer = [chunk];
+        }
+    } else if (Array.isArray(chunk)) {
+        hasData = true;
         if (this._buffer) {
             this._buffer.push.apply(this._buffer, chunk);
         } else {
             this._buffer = Array.prototype.slice.call(chunk);
         }
     }
-    if (this._inWaiting) {
+    if (hasData && this._inWaiting) {
         this.push(this._buffer[this._index++]); // will trigger read
     }
     if ('function' === typeof cb) {
