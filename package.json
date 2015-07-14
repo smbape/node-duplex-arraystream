@@ -1,16 +1,16 @@
 {
-  "name": "smArrayStream",
-  "version": "0.0.1",
+  "name": "sm-array-stream",
+  "version": "0.1.0",
   "description": "Array Stream",
   "main": "./sm-array-stream.js",
   "scripts": {
     "test": "node ./test/sm-array-stream.test.js"
   },
   "dependencies": {
-    "readable-stream": "^1.0.33"
+    "readable-stream": "^2.0.1"
   },
   "devDependencies": {
-    "async": "*",
-    "nodeunit": "*"
+    "async": "^1.3.0",
+    "nodeunit": "^0.9.1"
   }
 }
