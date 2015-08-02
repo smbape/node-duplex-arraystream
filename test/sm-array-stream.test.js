@@ -115,6 +115,7 @@ function testDuplex(assert) {
     });
 
     stream.once('end', function() {
+        assert.strictEqual(index, arr.length);
         assert.done();
     });
 
