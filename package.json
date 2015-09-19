@@ -1,10 +1,10 @@
 {
-  "name": "sm-array-stream",
+  "name": "array-stream",
   "version": "0.1.0",
   "description": "Array Stream",
-  "main": "./sm-array-stream.js",
+  "main": "./index.js",
   "scripts": {
-    "test": "node ./test/sm-array-stream.test.js"
+    "test": "node ./test/test.js"
   },
   "dependencies": {
     "readable-stream": "^2.0.1"

@@ -3,6 +3,7 @@ sm-array-stream
 Create a stream from an array
 
 ```javascript
+var ArrayStream = require('array-stream');
 var arr = [1, 2, 3],
     stream = new ArrayStream(arr),
     index = 0;
