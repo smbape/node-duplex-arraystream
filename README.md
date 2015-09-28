@@ -1,6 +1,6 @@
-sm-array-stream
+array-stream
 =======
-Create a stream from an array
+Stream values of an array
 
 ```javascript
 var ArrayStream = require('array-stream');
