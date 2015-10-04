@@ -1,11 +1,28 @@
 {
   "name": "array-stream",
-  "version": "0.1.0",
-  "description": "Array Stream",
-  "main": "./index.js",
+  "version": "1.0.0",
+  "description": "Stream values of an array",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
     "test": "node ./test/test.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smbape/node-array-stream"
+  },
+  "keywords": [
+    "array",
+    "stream"
+  ],
+  "author": "Stéphane MBAPE",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smbape/node-array-stream/issues"
+  },
+  "homepage": "https://github.com/smbape/node-array-stream",
   "dependencies": {
     "readable-stream": "^2.0.1"
   },
