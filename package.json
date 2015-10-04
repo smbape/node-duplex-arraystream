@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/smbape/node-array-stream"
+    "url": "https://github.com/smbape/node-duplex-arraystream"
   },
   "keywords": [
     "array",
@@ -20,9 +20,9 @@
   "author": "Stéphane MBAPE",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/smbape/node-array-stream/issues"
+    "url": "https://github.com/smbape/node-duplex-arraystream/issues"
   },
-  "homepage": "https://github.com/smbape/node-array-stream",
+  "homepage": "https://github.com/smbape/node-duplex-arraystream",
   "dependencies": {
     "readable-stream": "^2.0.1"
   },
