@@ -1,6 +1,6 @@
 {
   "name": "duplex-arraystream",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Stream values of an array",
   "main": "index.js",
   "scripts": {
